@@ -62,6 +62,7 @@ episodes:
 - introduction.Rmd
 - technologies-for-sensing.Rmd
 - structure-from-motion.Rmd
+- tracking-in-vr.Rmd
 
 # Information for Learners
 learners: 

@@ -161,6 +161,16 @@ Non-optical systems are portable but can restrict movement.
 Optical systems can be very precise, but are non portable.
 
 
+## Performance and cost
+An important metric for sensing is the accuracy of the system.
+This includes both hardware and software.
+
+Active methods are more accurate, 
+depending on the emitting power of the light source. 
+But they tend to have a higher cost.
+
+Passive methods are reliant on the ability to find 
+features in the scene, but have a lower cost.
 <!--
 ## Image sensors
 

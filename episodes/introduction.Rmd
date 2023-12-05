@@ -19,8 +19,10 @@ physical 3D environments?
 
 - Have an awareness of the methods available 
 for sensing (or gathering data) of physical 3D environments and objects.
+- Understand the different types of sensors, in particular
+for detecting motion.
 - Develop a good understanding of the Structure from motion method, also known as photogrammetry
-- Understand the applications of these method to Virtual Reality and 
+- Understand the applications of these sensing technologies for Virtual Reality and 
 Mixed Reality systems.
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

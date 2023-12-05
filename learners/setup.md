@@ -4,4 +4,5 @@ title: Setup
 
 ## Dataset
 ## Set up
-Instructions for setup are specified here.
+
+No setup is required for this lesson
