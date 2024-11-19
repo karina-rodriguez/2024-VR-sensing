@@ -270,7 +270,19 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="tracking-in-vr.html">4. Tracking in VR</a>
+        <a href="creating-3d-models-via-sfm.html">4. Creating 3D models via SfM</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="tracking-in-vr.html">5. Tracking in VR</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -446,8 +458,7 @@ for the system to operate.</p></section><section id="aio-technologies-for-sensin
 <hr class="half-width">
 <figure><img src="fig/AdobeStock_25679833.jpeg" alt="sensors" class="figure mx-auto d-block"><div class="figcaption">Microchip board with sensor © Kadmy from
 AdobeStock</div>
-</figure><p><a href="https://www.youtube.com/watch?v=rLxE0VjEkO8" title="Sensors" class="external-link"><img src="https://i.ytimg.com/vi/rLxE0VjEkO8/maxresdefault.jpg" alt="IMAGE ALT TEXT" class="figure"></a></p>
-<p>Sensors <strong>sample signals</strong> that measure real world
+</figure><p>Sensors <strong>sample signals</strong> that measure real world
 physical data. This includes sampling:</p>
 <ul>
 <li>Acceleration forces (accelerometer)</li>
@@ -630,13 +641,376 @@ any links that you are not going to use.
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
-<p><img src="fig/AdobeStock_656775682.svg" alt="icon" class="figure"> Also known as
+<p><img src="fig/AdobeStock_656775682.svg" style="width:60.0%" alt="icon" class="figure"> Also known as photogrammetry.</p>
+<p>Both terms are used to refer to the computing process of estimating
+the 3D structure of a scene from a set of 2D raster images. A
+photogrammetry software receives as an <strong>input</strong> a set of
+raster images of an object or environment and <strong>outputs</strong> a
+3D model.</p>
+<div class="section level3">
+<h3 id="definition">Definition<a class="anchor" aria-label="anchor" href="#definition"></a>
+</h3>
+<p>Defined by the American Society for Photogrammetry and Remote
+Sensing, photogrammetry is the practice of gathering reliable data about
+physical objects and environments through the recording, measurement,
+and interpretation of photographic images.</p>
+<p>Photogrammetry is a highly favoured technique for documenting the
+shape and appearance of cultural heritage objects due to its
+cost-effectiveness.</p>
+<p>Essentially, it entails taking 2D photos with a camera and using
+specialised software to create a 3D model.</p>
+<p>This process involves the software initially identifying features in
+the images, followed by matching these features, and finally
+reconstructing the 3D object, with or without colour.</p>
+</div>
+<div class="section level3">
+<h3 id="how-does-it-do-it">How does it do it?<a class="anchor" aria-label="anchor" href="#how-does-it-do-it"></a>
+</h3>
+<p>The underlying technology is more familiar than you might think! It
+is based on the same principles that the ones used by our vision system
+to perceive the 3-dimensional world.</p>
+<figure><img src="fig/Yokohama4MaidsChrysanthemum.jpg" style="width:60.0%" alt="two views" class="figure mx-auto d-block"><div class="figcaption">Bernard de Go Mars under Public Domain © from
+[Wikimedia] (<a href="https://commons.wikimedia.org/w/index.php?curid=25846" class="external-link uri">https://commons.wikimedia.org/w/index.php?curid=25846</a>)</div>
+</figure><figure><img src="fig/Yokohama4MaidsChrysanthemumWikiAnim.gif" style="width:60.0%" alt="two views animated" class="figure mx-auto d-block"><div class="figcaption">Bernard de Go Mars under Public Domain © from
+[Wikimedia] (<a href="https://commons.wikimedia.org/w/index.php?curid=25846" class="external-link uri">https://commons.wikimedia.org/w/index.php?curid=25846</a>)</div>
+</figure><p>Because of this principle, analogue photographers in the 19th century
+were already producing stereoscopic and photogrammetric sets of images
+of many subjects<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+</div>
+<div class="section level3">
+<h3 id="does-it-work-for-everything">Does it work for everything<a class="anchor" aria-label="anchor" href="#does-it-work-for-everything"></a>
+</h3>
+<p>There is no restriction on the scale at which photogrammetry
+operates.</p>
+<p>As such, photogrammetry is performed at a variety of ranges, from
+microscopic images to aerial or space images.</p>
+<p><strong>Be aware</strong> that it does not mean it can be applied to
+every object. There are some restrictions for deploying this technique.
+For instance, it does not work well with transparent or reflective,
+shiny objects. Neither does it work well with objects that move
+constantly, like a live animal or a dress worn by someone.</p>
+<p>While photogrammetry may not be ideal for reflective, transparent,
+and moving objects, there are other solutions to address such
+issues.</p>
+<p>Sometimes, this includes coating an object with powder-like sprays or
+accessing specialised dome-shape equipment that captures the interaction
+of light with an object so that this can be replicated in the 3D
+model.</p>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr>
+<ol>
+<li id="fn1"><p><a href="http://www.theulegium.de/fileadmin/user_upload/Texte/Meydenb.pdf" class="external-link">Jörg
+Albertz (2001) Albrecht Meydenbauer – Pioneer Of Photogrammetric
+Documentation Of The Cultural Heritage. Proceedings 18th International
+Symposium CIPA 2001</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div></section><section id="aio-creating-3d-models-via-sfm"><p>Content from <a href="creating-3d-models-via-sfm.html">Creating 3D models via SfM</a></p>
+<hr>
+<p>Last updated on 2024-11-19 |
+
+        <a href="https://github.com/karina-rodriguez/2024-VR-sensing/edit/main/episodes/creating-3d-models-via-sfm.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<section><h2 class="section-heading" id="camera-considerations">Camera considerations<a class="anchor" aria-label="anchor" href="#camera-considerations"></a>
+</h2>
+<hr class="half-width">
+<p>Some knowledge in digital photography is useful for photogrammetry.
+In case you do not have advanced skills, it is recommended that at least
+the following advice should be followed.</p>
+</section><section><h2 class="section-heading" id="resolution">Resolution<a class="anchor" aria-label="anchor" href="#resolution"></a>
+</h2>
+<hr class="half-width">
+<p>Preferably shoot in <strong>RAW</strong> and in maximal resolution.
+JPG compression creates noise that should be avoided. If JPG images are
+to be used, then prefer high quality JPG images.</p>
+</section><section><h2 class="section-heading" id="iso-values">ISO values<a class="anchor" aria-label="anchor" href="#iso-values"></a>
+</h2>
+<hr class="half-width">
+<p><strong>ISO</strong> values should be the <strong>lowest
+possible</strong> as you want <strong>clear, sharp images</strong>
+without too much noise. ISO 100 will provide good pictures without much
+noise but for this you will need a tripod because longer shutter speeds
+will be required. For hand-held camera you can go up to ISO 800 but this
+will bring more grain to your pictures.</p>
+</section><section><h2 class="section-heading" id="aperture">Aperture<a class="anchor" aria-label="anchor" href="#aperture"></a>
+</h2>
+<hr class="half-width">
+<p><strong>Aperture</strong> value (f-number) should be <strong>high
+enough</strong> so as to be able to distinguish details without having
+blurred surfaces. A higher f-number means that you will get a
+<strong>better depth of field</strong>. Something between f/8 and f/16
+would work well.</p>
+</section><section><h2 class="section-heading" id="shutter-speed">Shutter speed<a class="anchor" aria-label="anchor" href="#shutter-speed"></a>
+</h2>
+<hr class="half-width">
+<p><strong>Shutter speed</strong> should be <strong>fast enough</strong>
+to freeze images and avoid blur that is caused by the movement of the
+camera. If you are using a tripod you can use slower shutter speeds. The
+rule here is that anything below <strong>(slower) than 1/60 of a second
+requires a tripod</strong>.</p>
+</section><section><h2 class="section-heading" id="depth-of-field-and-focus">Depth of field and focus<a class="anchor" aria-label="anchor" href="#depth-of-field-and-focus"></a>
+</h2>
+<hr class="half-width">
+<p>You should consider always a <strong>large depth of field</strong>
+when possible as <strong>good focus</strong> especially on the subject
+is important.</p>
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Depth-of-field.svg" style="width:60.0%" alt="Depth-of-field" class="figure mx-auto d-block"><div class="figcaption">Depth-of-field</div>
+</figure><p>Be careful to have all the important parts of the image in focus.
+Automatic focus can be used when you are rotating around the object, but
+you can set focus manually if you are using a turntable.</p>
+<p>For a better explanation on how <strong>depth of field</strong> works
+in conjunction with <strong>aperture, focal length and focus
+distance</strong> you can refer to the websites mentioned below.</p>
+<p><strong>Example of settings</strong>: f/8, ISO 400, shutter speed
+1/30 and if light isn’t enough you can increase ISO to 800 OR lower
+shutter speed to 1/15 (remember that any shutter speed that is lower
+than 1/60 requires a tripod). Please note that these are just examples
+and you should check exposure for every acquisition depending on current
+light conditions.</p>
+<p>More information:</p>
+<ul>
+<li>Cambridge in Color: <a href="https://www.cambridgeincolour.com/tutorials/depth-of-field.htm" class="external-link">https://www.cambridgeincolour.com/tutorials/depth-of-field.htm</a>
+</li>
+<li>Photographylife: <a href="https://photographylife.com/what-is-depth-of-field" class="external-link">https://photographylife.com/what-is-depth-of-field</a>
+</li>
+</ul></section><section><h2 class="section-heading" id="before-you-start">Before you start<a class="anchor" aria-label="anchor" href="#before-you-start"></a>
+</h2>
+<hr class="half-width">
+<p>Before embarking on photogrammetry, consider the object you want to
+digitise and the space available to do this. You might want to ask
+yourself:</p>
+<ul>
+<li>Does the object has enough texture for the software to find enough
+features?</li>
+<li>If outdoors, is the building or environment in a busy area with
+passers by or lots of foliage?</li>
+<li>Will I use natural or artificial or natural light to best illuminate
+the object?</li>
+<li>What equipment will I need with me if I need to travel to perform
+the digitisation, what will I have access once I am on site (e.g. power
+to recharge batteries)?</li>
+</ul>
+<p>Overall, the recommendation is to <strong>avoid plain and monotonous
+surfaces</strong>. Flat, shiny, transparent, very thin artefacts and
+textures such as fur, hair won’t be the ideal candidates for
 photogrammetry.</p>
-<p>Passive technique based on multiple acquisitions of the scene taken
-by different viewpoints.</p>
-<p>Can use a sequence of images (taken separately or as a video).</p>
-<p>Artificial lights illuminate the scene and are not exploited for
-measuring.</p></section><section id="aio-tracking-in-vr"><p>Content from <a href="tracking-in-vr.html">Tracking in VR</a></p>
+<p><strong>Moving objects</strong> (e.g. leaves of a tree or people
+walking) are not good candidates either.</p>
+<p>Some objects are <strong>shinny</strong> and the
+<strong>reflections</strong> will result in having lots of noise, hence
+a ‘bad’ model. Adding talc or corn-starch on the surface of the object
+could be a solution but this cannot be applied on most cultural heritage
+artefacts.</p>
+<p>Significant colour changes or colour designs on a relatively plain
+surface could provide good reference points and help us to produce a
+model.</p>
+<p>The best candidates are rigid, non-reflective, textured
+artefacts.</p>
+</section><section><h2 class="section-heading" id="photographing-the-objectenvironment">Photographing the object/environment<a class="anchor" aria-label="anchor" href="#photographing-the-objectenvironment"></a>
+</h2>
+<hr class="half-width">
+<p>Good acquisition of images is important in order to have a successful
+project.</p>
+<p>Depending on the type of the object and scene you want to acquire,
+you might be able to create an optimal setup which can allow you to
+develop a workflow to provide you with a good 3D model.</p>
+<p>Thankfully, there is guidance and best practices, provided by
+independent bodies and software companies. For example, see the <a href="https://www.3dflow.net/technology/documents/photogrammetry-how-to-acquire-pictures/" class="external-link">3D
+Flow</a> software guidance. We will be using this software in this
+workshop.</p>
+<p>In general, start the acquisition from an angle/view of the object
+that has many details and is not very plain. Thereafter, you need to
+take images around the object as shown in the image below.</p>
+<div class="section level3">
+<h3 id="overlapping">Overlapping<a class="anchor" aria-label="anchor" href="#overlapping"></a>
+</h3>
+<p>In all cases you need many overlapping images of the object or
+environment. When taking images, you need enough overlap between, around
+50-60%, to make sure that the software will be able to align the images
+correctly.</p>
+</div>
+<div class="section level3">
+<h3 id="number-of-images">Number of images<a class="anchor" aria-label="anchor" href="#number-of-images"></a>
+</h3>
+<p>20-60 for each 360 acquisition. Remember that it is better to have
+more images than less. ‘Bad’ images (e.g. blurred, not in focus) can be
+deleted before processing.</p>
+<p>Remember that you should avoid having ‘blind-zones’ and the object
+should occupy the maximum possible frame area.</p>
+<p>Close-up photos are allowed only to capture minor details.</p>
+<figure><img src="fig/facade.svg" alt="Best practice to photograph facades. DO NOT take a panorama image of a facade. DO walk along the facade taking overlapping pictures." class="figure mx-auto d-block"><div class="figcaption">Best practice to photograph facades. DO NOT take
+a panorama image of a facade. DO walk along the facade taking
+overlapping pictures.</div>
+</figure><figure><img src="fig/room.svg" alt="Best practice to photograph rooms or closed spaces. DO NOT take various panorama images of the room. DO walk around the room taking overlapping pictures." class="figure mx-auto d-block"><div class="figcaption">Best practice to photograph rooms or closed
+spaces. DO NOT take various panorama images of the room. DO walk around
+the room taking overlapping pictures.</div>
+</figure><figure><img src="fig/object.svg" alt="Best practice to photograph objects. DO NOT take pictures without overlap. DO walk around the object taking overlapping pictures." class="figure mx-auto d-block"><div class="figcaption">Best practice to photograph objects. DO NOT take
+pictures without overlap. DO walk around the object taking overlapping
+pictures.</div>
+</figure>
+</div>
+<div class="section level3">
+<h3 id="targetsmarkers">Targets/markers<a class="anchor" aria-label="anchor" href="#targetsmarkers"></a>
+</h3>
+<p>You can put some markers and targets on/around/underneath the object
+that you want to acquire to help the software with the aligning
+process.</p>
+<p>To support accurate measurements of 3D data you can also place a
+calibrated scale image underneath the object (or scale bars around
+it).</p>
+<p>You can use these two images which contain both a texture, as well as
+a scale image. Follow the instructions, including printing in colour and
+at 1:1 scale:</p>
+<ul>
+<li><a href="files/photogrammetric_scale_noncoded_markers_medium.pdf">20
+cm diameter marker image</a></li>
+<li><a href="files/Photogrammetric_scale_noncoded_markers_plus_small.pdf">12 cm
+diameter marker image</a></li>
+</ul>
+<p>Remember that these points should remain in the same position with
+respect to the object.</p>
+<figure><img src="fig/HorseMatch1Cut.jpg" style="width:100.0%" alt="12 cm Marker under wooden horse object" class="figure mx-auto d-block"><div class="figcaption">12 cm Marker under wooden horse object</div>
+</figure><p>So, if you move with the camera around the object they should remain
+in the same place (e.g. placed around the object). But if you are using
+a turntable they should turn along with the object (e.g. placed
+underneath the object).</p>
+</div>
+<div class="section level3">
+<h3 id="lighting">Lighting<a class="anchor" aria-label="anchor" href="#lighting"></a>
+</h3>
+<p>Good lighting is required and occlusions should be kept to
+minimum.</p>
+<p>The ideal conditions for an outdoor acquisition require an
+overcast/cloudy day.</p>
+<p>If there is sun that creates shadows, you can use a sheet to shade
+the object of interest. But for buildings, it might not be possible as
+illustrated below.</p>
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/D%C3%BClmen%2C_St.-Viktor-Kirche_--_2014_--_0076.jpg" style="width:50.0%" alt="Shadows created by the sunlight on Saint Viktor of Xanten Church, Dülmen, North Rhine-Westphalia, Germany, Public domain, Dietmar Rabich , under CC BY-SA 4.0, via Wikimedia Commons" class="figure mx-auto d-block"><div class="figcaption">Shadows created by the sunlight on Saint Viktor
+of Xanten Church, Dülmen, North Rhine-Westphalia, Germany, Public
+domain, Dietmar Rabich , under <a href="https://creativecommons.org/licenses/by-sa/4.0" class="external-link">CC BY-SA 4.0</a>,
+via <a href="https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_St.-Viktor-Kirche_--_2014_--_0076.jpg" class="external-link">Wikimedia
+Commons</a>
+</div>
+</figure><figure><img src="fig/QueenVictoria_Photo.jpg" style="width:50.0%" alt="Overcast lighting on Statue of Queen Victoria, Brighton" class="figure mx-auto d-block"><div class="figcaption">Overcast lighting on Statue of Queen Victoria,
+Brighton</div>
+</figure><p>For indoor acquisition, you can use static artificial light. In this
+case, lights should have the same intensity.</p>
+<p>It is better to use diffused light that is projected on every surface
+of the object equally.</p>
+<p>Two light sources can be placed on the sides of the object at an
+angle of 45 degrees and one can come from the top.</p>
+<p>Shadows should be avoided as much as possible (thus you might want to
+add more light sources, for example one at the back).</p>
+</div>
+<div class="section level3">
+<h3 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a>
+</h3>
+<p>This should be kept simple and plain.</p>
+<p>There should be high contrast between the object and the background
+(e.g. dark object requires bright background).</p>
+</div>
+</section><section><h2 class="section-heading" id="types-of-setup">Types of setup<a class="anchor" aria-label="anchor" href="#types-of-setup"></a>
+</h2>
+<hr class="half-width">
+<p>There are two different types of setup which you can use depending on
+the equipment and accesories you have access to. Their difference is
+whether the camera or the object remains static.</p>
+<p>In cases where you cannot touch the object, then you will only have
+one choice: to move the camera.</p>
+<p>In all cases you can create various series of images by varying the
+height of your camera. For this, you can raise or lower as well as
+adjust the angle of the camera to take another series of photos.</p>
+<div class="section level3">
+<h3 id="static-camera-move-object">Static camera / move object<a class="anchor" aria-label="anchor" href="#static-camera-move-object"></a>
+</h3>
+<p>In this setup the camera is going to remain static on a tripod.
+Ideally you want to control the camera remotely to avoid small movements
+which can be caused by your hand pushing the trigger.</p>
+<p><img src="fig/staticcam.svg" alt="Static camera / move object" class="figure">{alt=“static camera”Before you
+start}</p>
+<p>The object is placed on a turntable. A turntable which is controlled
+remotely works best. Again, you want to minimise movements caused
+unintentionally on the object’s position.</p>
+<p>To avoid the software getting confused on the object moving but the
+background remaining static, you can use a box or cloth as a
+background.</p>
+<p>Black or white background work better as you want to avoid
+reflections onto the object and alter its colour. Black is always a safe
+choice, unless the object is dark. In such case, it is best to use a
+white background.</p>
+<p>We will later mask the background, so that the software ignores it.
+To help with this, take an image of the setup without the object before
+placing the object. This will later become useful when applying the mask
+to the images.</p>
+<figure><img src="fig/Box_PhotoMask.jpg" style="width:60.0%" alt="Photo of setup without object." class="figure mx-auto d-block"><div class="figcaption">Photo of setup without object.</div>
+</figure><p>If artificial light is used, this should be diffused and should not
+create shadows.</p>
+<figure><img src="fig/1024px-Light_Tent_DIY.jpg" style="width:60.0%" alt="turntable" class="figure mx-auto d-block"><div class="figcaption">Diffused box for static objecst</div>
+</figure><figure><img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Balkan_Heritage_Field_School-5.jpg" style="width:60.0%" alt="Balkan Heritage Field School (photogrammetry course) at Stobi, Republic of Macedonia, Ivan.giogio, under CC BY-SA 4.0, via Wikimedia Commons" class="figure mx-auto d-block"><div class="figcaption">Balkan Heritage Field School (photogrammetry
+course) at Stobi, Republic of Macedonia, Ivan.giogio, under <a href="https://creativecommons.org/licenses/by-sa/4.0" class="external-link">CC BY-SA 4.0</a>,
+via <a href="https://commons.wikimedia.org/wiki/File:Balkan_Heritage_Field_School-5.jpg" class="external-link">Wikimedia
+Commons</a>
+</div>
+</figure><p>The camera should be placed at a height that allows to see all
+important features of the artefact (e.g. at an angle of 45 degrees above
+the object).</p>
+<p>When you photograph, rotate the turntable in small increments.</p>
+<p>The advantage of this method is that you can have lower ISO and
+shutter speeds and thus sharper images (especially in indoor
+environments).</p>
+<figure><img src="fig/Horse_Low_TexturedPhotos.jpg" style="width:100.0%" alt="As the visualisation shows, the digitial photographs in this setup have a repetitive structure." class="figure mx-auto d-block"><div class="figcaption">As the visualisation shows, the digitial
+photographs in this setup have a repetitive structure.</div>
+</figure><p>Here you can also find a <a href="https://www.youtube.com/watch?v=Fj7wGGXPM0A" class="external-link"><strong>video</strong></a>
+of a DIY rig that aims to speed up the process when shooting small and
+medium objects by <a href="https://en.openscan.eu/" class="external-link"><strong>Openscan.eu</strong></a>.</p>
+</div>
+<div class="section level3">
+<h3 id="static-object-move-camera">Static object / move camera<a class="anchor" aria-label="anchor" href="#static-object-move-camera"></a>
+</h3>
+<p>The object is placed at the centre and the photographer moves around
+it taking pictures.</p>
+<figure><img src="fig/staticobj.svg" style="width:60.0%" alt="static object" class="figure mx-auto d-block"><div class="figcaption">Static object / move camera</div>
+</figure><p>Place the item at a good height so that it is possible to take images
+from a higher and a lower level.</p>
+<p>In case some areas are not that visible, remember to take different
+pictures of that part from different angles.</p>
+<p>The advantage of this method is that it will allow you to acquire
+larger objects without setting up lights.</p>
+<figure><img src="fig/objstaticphotos.png" alt="static obj" class="figure mx-auto d-block"><div class="figcaption">As the visualisation shows, the digitial
+photographs in this setup are more organic, as the photographer moves
+taking more or less pictures where required.</div>
+</figure><div id="challenge-taking-photos" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="challenge-taking-photos" class="callout-inner">
+<h3 class="callout-title">Challenge: Taking photos</h3>
+<div class="callout-content">
+<p><strong><em>This activity can be done as a team</em></strong></p>
+<p>Experiment with both setups for photographing one or more objects
+relevant to your project. When doing this consider the best practices,
+including:</p>
+<ul>
+<li>Best camera and area setup.</li>
+<li>Adding scale to the images.</li>
+<li>How many series of images you plan to acquire and what is the
+strategy to achieve this.</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</div>
+</section></section><section id="aio-tracking-in-vr"><p>Content from <a href="tracking-in-vr.html">Tracking in VR</a></p>
 <hr>
 <p>Last updated on 2024-11-19 |
 

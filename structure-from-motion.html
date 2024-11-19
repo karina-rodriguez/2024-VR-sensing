@@ -108,11 +108,11 @@
   Sensing and tracking 3D environments
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 50%" class="percentage">
-    50%
+<aside class="col-md-12 lesson-progress"><div style="width: 40%" class="percentage">
+    40%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 50%" aria-valuenow="50" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 40%" aria-valuenow="40" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -227,7 +227,16 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="tracking-in-vr.html">4. Tracking in VR</a>
+        <a href="creating-3d-models-via-sfm.html">4. Creating 3D models via SfM</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="tracking-in-vr.html">5. Tracking in VR</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -276,7 +285,7 @@
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="technologies-for-sensing.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="tracking-in-vr.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="creating-3d-models-via-sfm.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -284,8 +293,8 @@
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Technologies for
         </a>
-        <a class="chapter-link float-end" href="tracking-in-vr.html" rel="next">
-          Next: Tracking in VR...
+        <a class="chapter-link float-end" href="creating-3d-models-via-sfm.html" rel="next">
+          Next: Creating 3D models...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -303,24 +312,76 @@
 
         
 
-<p><img src="fig/AdobeStock_656775682.svg" alt="icon" class="figure"> Also known as
-photogrammetry.</p>
-<p>Passive technique based on multiple acquisitions of the scene taken
-by different viewpoints.</p>
-<p>Can use a sequence of images (taken separately or as a video).</p>
-<p>Artificial lights illuminate the scene and are not exploited for
-measuring.</p>
+<p><img src="fig/AdobeStock_656775682.svg" style="width:60.0%" alt="icon" class="figure"> Also known as photogrammetry.</p>
+<p>Both terms are used to refer to the computing process of estimating
+the 3D structure of a scene from a set of 2D raster images. A
+photogrammetry software receives as an <strong>input</strong> a set of
+raster images of an object or environment and <strong>outputs</strong> a
+3D model.</p>
+<div class="section level3">
+<h3 id="definition">Definition<a class="anchor" aria-label="anchor" href="#definition"></a></h3>
+<p>Defined by the American Society for Photogrammetry and Remote
+Sensing, photogrammetry is the practice of gathering reliable data about
+physical objects and environments through the recording, measurement,
+and interpretation of photographic images.</p>
+<p>Photogrammetry is a highly favoured technique for documenting the
+shape and appearance of cultural heritage objects due to its
+cost-effectiveness.</p>
+<p>Essentially, it entails taking 2D photos with a camera and using
+specialised software to create a 3D model.</p>
+<p>This process involves the software initially identifying features in
+the images, followed by matching these features, and finally
+reconstructing the 3D object, with or without colour.</p>
+</div>
+<div class="section level3">
+<h3 id="how-does-it-do-it">How does it do it?<a class="anchor" aria-label="anchor" href="#how-does-it-do-it"></a></h3>
+<p>The underlying technology is more familiar than you might think! It
+is based on the same principles that the ones used by our vision system
+to perceive the 3-dimensional world.</p>
+<figure><img src="fig/Yokohama4MaidsChrysanthemum.jpg" style="width:60.0%" alt="two views" class="figure mx-auto d-block"><div class="figcaption">Bernard de Go Mars under Public Domain © from
+[Wikimedia] (<a href="https://commons.wikimedia.org/w/index.php?curid=25846" class="external-link uri">https://commons.wikimedia.org/w/index.php?curid=25846</a>)</div>
+</figure><figure><img src="fig/Yokohama4MaidsChrysanthemumWikiAnim.gif" style="width:60.0%" alt="two views animated" class="figure mx-auto d-block"><div class="figcaption">Bernard de Go Mars under Public Domain © from
+[Wikimedia] (<a href="https://commons.wikimedia.org/w/index.php?curid=25846" class="external-link uri">https://commons.wikimedia.org/w/index.php?curid=25846</a>)</div>
+</figure><p>Because of this principle, analogue photographers in the 19th century
+were already producing stereoscopic and photogrammetric sets of images
+of many subjects<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+</div>
+<div class="section level3">
+<h3 id="does-it-work-for-everything">Does it work for everything<a class="anchor" aria-label="anchor" href="#does-it-work-for-everything"></a></h3>
+<p>There is no restriction on the scale at which photogrammetry
+operates.</p>
+<p>As such, photogrammetry is performed at a variety of ranges, from
+microscopic images to aerial or space images.</p>
+<p><strong>Be aware</strong> that it does not mean it can be applied to
+every object. There are some restrictions for deploying this technique.
+For instance, it does not work well with transparent or reflective,
+shiny objects. Neither does it work well with objects that move
+constantly, like a live animal or a dress worn by someone.</p>
+<p>While photogrammetry may not be ideal for reflective, transparent,
+and moving objects, there are other solutions to address such
+issues.</p>
+<p>Sometimes, this includes coating an object with powder-like sprays or
+accessing specialised dome-shape equipment that captures the interaction
+of light with an object so that this can be replicated in the 3D
+model.</p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr><ol><li id="fn1"><p><a href="http://www.theulegium.de/fileadmin/user_upload/Texte/Meydenb.pdf" class="external-link">Jörg
+Albertz (2001) Albrecht Meydenbauer – Pioneer Of Photogrammetric
+Documentation Of The Cultural Heritage. Proceedings 18th International
+Symposium CIPA 2001</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol></div>
 
 
 
       </div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="technologies-for-sensing.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="tracking-in-vr.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="creating-3d-models-via-sfm.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -328,8 +389,8 @@ any links that you are not going to use.
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Technologies for
         </a>
-        <a class="chapter-link float-end" href="tracking-in-vr.html" rel="next">
-          Next: Tracking in VR...
+        <a class="chapter-link float-end" href="creating-3d-models-via-sfm.html" rel="next">
+          Next: Creating 3D models...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
