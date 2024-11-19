@@ -62,6 +62,7 @@ episodes:
 - introduction.Rmd
 - technologies-for-sensing.Rmd
 - structure-from-motion.Rmd
+- creating-3d-models-via-sfm.Rmd
 - tracking-in-vr.Rmd
 
 # Information for Learners

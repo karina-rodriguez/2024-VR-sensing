@@ -8,8 +8,6 @@ exercises: 2
 
 ![Microchip board with sensor &copy; Kadmy from AdobeStock](fig/AdobeStock_25679833.jpeg){alt="sensors"}
 
-[![IMAGE ALT TEXT](https://i.ytimg.com/vi/rLxE0VjEkO8/maxresdefault.jpg)](https://www.youtube.com/watch?v=rLxE0VjEkO8 "Sensors")
-
 
 Sensors **sample signals** that measure real world physical data.
 This includes sampling:
