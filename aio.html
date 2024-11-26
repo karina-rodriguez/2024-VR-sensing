@@ -246,7 +246,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="technologies-for-sensing.html">2. Technologies for sensing</a>
+        <a href="structure-from-motion.html">2. Structure from Motion</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -258,7 +258,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="structure-from-motion.html">3. Structure from Motion</a>
+        <a href="creating-3d-models-via-sfm.html">3. Creating 3D models via SfM</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -270,7 +270,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="creating-3d-models-via-sfm.html">4. Creating 3D models via SfM</a>
+        <a href="software-workflow.html">4. Software Workflow</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -282,7 +282,19 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="tracking-in-vr.html">5. Tracking in VR</a>
+        <a href="technologies-for-sensing.html">5. Technologies for sensing</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="tracking-in-vr.html">6. Tracking in VR</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -403,8 +415,8 @@ Mixed Reality applications.</p>
 <h3 class="callout-title">Challenge: Why tracking a physical
 environment?</h3>
 <div class="callout-content">
-<p>Think why tracking a physical environment is relevant to the
-development of VR/MR applications</p>
+<p>Why tracking a physical environment is relevant to the development of
+VR/MR applications</p>
 </div>
 </div>
 </div>
@@ -424,9 +436,10 @@ seamlessly interact with digital content within the same space.</p>
 </div>
 </div>
 </div>
-<p>Tracking a user is particularly relevant for VR applications.</p>
-<p>Increasingly important is tracking the physical space surrounding the
-user.</p>
+<p>Tracking users is particularly relevant for VR/MR applications. It
+allows to determine the position and orientation of the users; as well
+as sensing and providing information regarding the physical space
+surrounding the user.</p>
 <iframe title="Charité University Hospital - Operating Room" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay;
 fullscreen; xr-spatial-tracking" xr-spatial-tracking width="100%;" height="400px;" execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9ec46c4d615a4581a235eebfb162f574/embed">
 </iframe><p><a href="https://sketchfab.com/3d-models/charite-university-hospital-operating-room-9ec46c4d615a4581a235eebfb162f574" class="external-link">Queisner
@@ -443,197 +456,9 @@ things in our space are constantly moving, and being subject to the laws
 of physics.</p>
 <p>Not only a localization problem, but also a measuring problem. It
 requires the computer to determine the exact position of the user and of
-obstacles in the surrounding environment.</p>
+obstacles in the surrounding environment in real time.</p>
 <p>All of this needs to be computed at interactive rates or fast enough
-for the system to operate.</p></section><section id="aio-technologies-for-sensing"><p>Content from <a href="technologies-for-sensing.html">Technologies for sensing</a></p>
-<hr>
-<p>Last updated on 2024-11-26 |
-
-        <a href="https://github.com/karina-rodriguez/2024-VR-sensing/edit/main/episodes/technologies-for-sensing.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<section><h2 class="section-heading" id="sensing-data">Sensing data<a class="anchor" aria-label="anchor" href="#sensing-data"></a>
-</h2>
-<hr class="half-width">
-<figure><img src="fig/AdobeStock_25679833.jpeg" alt="sensors" class="figure mx-auto d-block"><div class="figcaption">Microchip board with sensor © Kadmy from
-AdobeStock</div>
-</figure><p>Sensors <strong>sample signals</strong> that measure real world
-physical data. This includes sampling:</p>
-<ul>
-<li>Acceleration forces (accelerometer)</li>
-<li>Visible light (photosensors)</li>
-<li>Images (CCD sensor)</li>
-<li>Distances to objects (laser based detection)</li>
-<li>Other data including temperature, humidity, pressure, wind direction
-and speed, illumination intensity, vibration intensity, sound intensity,
-power-line voltage, chemical concentrations, pollutant levels and vital
-body functions.</li>
-</ul>
-<p><strong>Samples</strong> are converted into numeric values that can
-be manipulated by a computer.</p>
-<p>Driven by the low cost, many of the devices which we use today
-contain sensors. This allows us to sense data all around us.</p>
-<p>Most of these sensors are relevant for <a href="https://www.youtube.com/watch?v=DidxdOAkpwA" class="external-link">Internet of
-Things</a>, and Internet of Place technologies.</p>
-<p>Sensors also allows objects and environments to respond and interact
-with their environment.</p>
-<p>Building on their wide availability, sensors also allow Virtual
-Reality and Mixed Reality to be more affordable.</p>
-<div id="challenge-vr-sensors" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge-vr-sensors" class="callout-inner">
-<h3 class="callout-title">Challenge: VR sensors?</h3>
-<div class="callout-content">
-<p>Think on which sensors are used by VR headests?</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
-<div class="accordion-body">
-<p>VR headset can include a variety of sensors, including:</p>
-<ul>
-<li>Inertial Measurement Unit (IMU) to measures force and angular rate
-by using a gyroscope, accelerometer and magnetometer.</li>
-<li>Image sensor</li>
-<li>Proximity sensor</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="sensing-motion">Sensing motion<a class="anchor" aria-label="anchor" href="#sensing-motion"></a>
-</h2>
-<hr class="half-width">
-<figure><img src="fig/Ranex_Smartwares_6000.293_-_board_-_motion_sensor_and_photoresistor-5608.jpg" style="width:40.0%" alt="motion sensor" class="figure mx-auto d-block"><div class="figcaption">Ranex Smartwares 6000.293 - board - motion
-sensor © <a href="https://commons.wikimedia.org/wiki/File:Ranex_Smartwares_6000.293_-_board_-_motion_sensor_and_photoresistor-5608.jpg" class="external-link">Raimond
-Spekking</a>
-</div>
-</figure><p>Detects moving objects, particularly people.</p>
-<p>Of interest as an interface to systems (e.g. lighting, recording,
-home control efficiency)</p>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Ranex_Smartwares_6000.293-5597.jpg" style="width:30.0%" class="figure"><img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Ranex_Smartwares_6000.293-5600.jpg" style="width:40.0%" alt="Ranex Smartwares 6000.293 © Raimond Spekking" class="figure"></p>
-</section><section><h2 class="section-heading" id="motion-capture">Motion capture<a class="anchor" aria-label="anchor" href="#motion-capture"></a>
-</h2>
-<hr class="half-width">
-<p>Detecting motion is of interest to many applications, including the
-film and game industry.</p>
-<p>This is in particular relevant for animation of digital data. It
-allows to transfers the movement of an actor to a digital character.</p>
-<p>Requires to have a 3D polygonal mesh which is ready for
-animation.</p>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Motion_Capture_with_Chad_Phantom.png" alt="3d model" class="figure"> However, remember a polygonal meshes are RIGID. They
-do not move, unless they undertake a process to animated them.</p>
-<p>This requires creating a system of joints (similar than our human
-body). This process is known as rigging. A rig is the digital skeleton
-formed of joints and bones.</p>
-<p>This functionality is offered by modelling packages.</p>
-<figure><img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Two_repetitions_of_a_walking_sequence_of_an_individual_recorded_using_a_motion-capture_system.gif" alt="motion" class="figure mx-auto d-block"><div class="figcaption">Two repetitions of a walking sequence recorded
-using a motion-capture system. The spatial trajectories of limb
-movements are highly similar despite of the timing of movement differing
-between repetitions. Data are presented and analyzed in the paper
-Simultaneous inference for misaligned multivariate functional data ©
-Lars Lau Raket</div>
-</figure></section><section><h2 class="section-heading" id="types-of-tracking-systems">Types of Tracking Systems<a class="anchor" aria-label="anchor" href="#types-of-tracking-systems"></a>
-</h2>
-<hr class="half-width">
-<p>There are different type of systems: optical vs non optical
-systems.</p>
-<div class="section level3">
-<h3 id="non-optical-tracking">Non-optical tracking<a class="anchor" aria-label="anchor" href="#non-optical-tracking"></a>
-</h3>
-<ul>
-<li>Based on sensors which measure inertia or mechanical motion,
-including accelerometer electromechanical device that measure
-acceleration forces.</li>
-<li>Come often with easy wearable systems.</li>
-<li>Enable accurate motion capture.</li>
-</ul>
-<p>For example, <a href="https://www.youtube.com/watch?v=-0hSQFbt67U&amp;t=1s" class="external-link">Xsens MVN
-solution for 3D Character Animation</a>.</p>
-</div>
-<div class="section level3">
-<h3 id="optical-tracking">Optical tracking<a class="anchor" aria-label="anchor" href="#optical-tracking"></a>
-</h3>
-<ul>
-<li>Use multiple digital cameras.</li>
-<li>Based on the information provided by the cameras looking at the
-element in motion-tracked within a limited area.</li>
-<li>Use position markers in the environment.</li>
-<li>Assemble the data into an approximation of the actor’s motion.</li>
-<li>The specific technology is based on the role light plays in the
-capture process: active versus passive system.</li>
-</ul>
-<p><a href="https://www.youtube.com/watch?v=O0mLfzbmqcg" class="external-link"><img src="https://i.ytimg.com/vi/O0mLfzbmqcg/maxresdefault.jpg" alt="ALT TEXT" class="figure"></a></p>
-<div class="section level4">
-<h4 id="active-tracking">Active tracking<a class="anchor" aria-label="anchor" href="#active-tracking"></a>
-</h4>
-<ul>
-<li>Markers are based on light such as LEDs.</li>
-<li>Systems illuminate one LED or multiple LEDs at a time.</li>
-<li>Software identify markers by their relative positions.</li>
-</ul>
-</div>
-<div class="section level4">
-<h4 id="passive-tracking">Passive tracking<a class="anchor" aria-label="anchor" href="#passive-tracking"></a>
-</h4>
-<p>Based on information provided by one or more digital cameras,
-including depth sensors.</p>
-<p>This allows for example hand and finger tracking</p>
-<p>VR devices now come with depth camera system for finger tracking.</p>
-<p><a href="https://www.youtube.com/watch?v=rnlCGw-0R8g" class="external-link"><img src="https://i.ytimg.com/vi/rnlCGw-0R8g/maxresdefault.jpg" alt="ALT TEXT" class="figure"></a></p>
-</div>
-<div class="section level4">
-<h4 id="hybrid-systems">Hybrid systems<a class="anchor" aria-label="anchor" href="#hybrid-systems"></a>
-</h4>
-<ul>
-<li>Use accelerometers and images.</li>
-<li>Features in the images are used as markers.</li>
-<li>Similar to Structure from Motion technology.</li>
-</ul>
-<p>Augmented Reality Systems make use of hybrid systems for <a href="https://www.youtube.com/watch?v=2y7NX-HUlMc&amp;t=301s" class="external-link">tracking
-capabilities</a>.</p>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="advantages-and-disadvantages">Advantages and disadvantages<a class="anchor" aria-label="anchor" href="#advantages-and-disadvantages"></a>
-</h2>
-<hr class="half-width">
-<p>Non-optical systems are portable but can restrict movement.</p>
-<p>Optical systems can be very precise, but are non portable.</p>
-</section><section><h2 class="section-heading" id="performance-and-cost">Performance and cost<a class="anchor" aria-label="anchor" href="#performance-and-cost"></a>
-</h2>
-<hr class="half-width">
-<p>An important metric for sensing is the accuracy of the system. This
-includes both hardware and software.</p>
-<p>Active methods are more accurate, depending on the emitting power of
-the light source. But they tend to have a higher cost.</p>
-<p>Passive methods are reliant on the ability to find features in the
-scene, but have a lower cost. <!--
-## Image sensors
-
-In a camera system,
-the image sensor receives incident light (photons)
-and transform it into a digital image.
-
-
-Active and passive methods.
-
-Active methods provide their own source of energy to illuminate the objects they observe.
-
-For instance LIDAR (Light Detection and Ranging), depth sensor and 3D scanners.
---></p>
-<!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
-</section></section><section id="aio-structure-from-motion"><p>Content from <a href="structure-from-motion.html">Structure from Motion</a></p>
+for the system to operate.</p></section><section id="aio-structure-from-motion"><p>Content from <a href="structure-from-motion.html">Structure from Motion</a></p>
 <hr>
 <p>Last updated on 2024-11-26 |
 
@@ -1010,6 +835,436 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
 </div>
+</section></section><section id="aio-software-workflow"><p>Content from <a href="software-workflow.html">Software Workflow</a></p>
+<hr>
+<p>Last updated on 2024-11-26 |
+
+        <a href="https://github.com/karina-rodriguez/2024-VR-sensing/edit/main/episodes/software-workflow.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<section><h2 class="section-heading" id="step-1-preparing-the-images">Step 1: Preparing the images<a class="anchor" aria-label="anchor" href="#step-1-preparing-the-images"></a>
+</h2>
+<hr class="half-width">
+<p>Once the photographs have been acquired, the next step is to transfer
+the images to a PC.</p>
+<p>Using a batch processing software, such as <a href="https://www.rawtherapee.com/" class="external-link">Raw Therapee</a>, you can convert
+the images from the raw file format to a format supported by the
+photogrammetry software. If you were not shooting using RAW settings,
+you can skip this step.</p>
+<p>Usually, the uncompressed TIFF or TIF file format is a good choice,
+as it is uncompressed retaining a good quality. JPEGs have a compressed
+format, and although faster to handle might provide less data for
+feature recognition.</p>
+<p>In any case, you must be sure you choose a format that retains the
+EXIF information within the file. This is because it contains useful
+information for the software projecting feature detected into 3D
+points.</p>
+<p>You can check EXIF information online, for example using <a href="https://exifinfo.org/" class="external-link">ExifInfo.org</a>.</p>
+<p>For this lesson, we provide images in [TIFF and JPEG
+format][datasets].</p>
+</section><section><h2 class="section-heading" id="step-2-organising-your-workspace">Step 2: Organising your workspace<a class="anchor" aria-label="anchor" href="#step-2-organising-your-workspace"></a>
+</h2>
+<hr class="half-width">
+<p>We will start by creating a structure to store all the files for your
+project.</p>
+<p>Create a folder using a name which reflects your project.</p>
+<p>Good practices include:</p>
+<pre><code><span>    <span class="va">ResourceIDofObjectifExistent_NameofObject_DateModelCreatedYY.MM.DD</span></span></code></pre>
+<p>Transfer all images into a folder.</p>
+<p>Within this folder, create another folder named <em>images</em>.</p>
+<p>Copy the images from the camera into the <em>images</em> folder.</p>
+</section><section><h2 class="section-heading" id="step-3-create-a-3df-zephyr-project">Step 3: Create a 3DF Zephyr project<a class="anchor" aria-label="anchor" href="#step-3-create-a-3df-zephyr-project"></a>
+</h2>
+<hr class="half-width">
+<p>The following instructions are specific to <a href="https://www.3dflow.net/3df-zephyr-photogrammetry-software/" class="external-link">3DF
+Zephyr</a>.</p>
+<p>Go to the workflow menu and choose <strong>New Project</strong>, you
+will be presented with a <em>“New project wizard window”</em>.</p>
+<p>Choose the first box <em>Sparse</em> in order to go through the whole
+process manually.</p>
+<p>Click <strong>Next&gt;</strong> you will be presented with the
+<em>“Photos selection page”</em>.</p>
+<p>Browse to the folder that contains your images and click
+<strong>Select Folder</strong> or select the relevant images if using
+<strong>Single Images</strong>.</p>
+<p>Click <strong>Next&gt;</strong></p>
+<p>You will be presented with the <em>“Camera calibration
+page</em>”.</p>
+<p>If you have a separate Exif file for calibrating the camera you can
+add it here, and you can also manually calibrate your camera in the
+<em>“Modify Calibration page”</em> otherwise go on and click
+<strong>Next&gt;</strong></p>
+<figure><img src="fig/Box_Photo.jpg" alt="photo" class="figure mx-auto d-block"><div class="figcaption">Image from photogrammetry acquistion.</div>
+</figure></section><section><h2 class="section-heading" id="step-4-importing-masks-optional">Step 4: Importing masks (optional)<a class="anchor" aria-label="anchor" href="#step-4-importing-masks-optional"></a>
+</h2>
+<hr class="half-width">
+<p>Masking allows the software to concentrate in the most important
+information which is the object you have acquired. It works best when
+using the “static camera / object moves” setup.</p>
+<p>In the <em>“Photos selection page”</em> there is an option to import
+the mask.</p>
+<p>If selected a new option will be presented and a new tool called
+<strong>Masquerade</strong> will be available before importing the
+images.</p>
+<p>Within this tool (which is also available from the main interface),
+it will be possible to generate a Mask to apply to all the images.</p>
+<p>The tool is simple to use. To create a mask, you can use an image
+without any object on the turntable if using such setup.</p>
+<figure><img src="fig/Box_PhotoMask.jpg" alt="Example of image showing the mask which is loaded into the software" class="figure mx-auto d-block"><div class="figcaption">Example of image showing the mask which is
+loaded into the software</div>
+</figure><p>But you can use a sample image provided in the dataset as a first
+file.</p>
+</section><section><h2 class="section-heading" id="step-5-aligning-photos">Step 5: Aligning photos<a class="anchor" aria-label="anchor" href="#step-5-aligning-photos"></a>
+</h2>
+<hr class="half-width">
+<p>The next step is to align the photos.</p>
+<p>This step will perform the three substeps: feature detection, feature
+matching and the first stage of the structure reconstruction step.</p>
+<p>In the software, you will be presented with the <em>“Camera
+orientation page”</em>. Keep the general setting and click
+<strong>Next&gt;</strong>.</p>
+<p>More details about how to manipulate these and the following steps by
+selecting specific parameters can be found with more detail in the <a href="https://www.3dflow.net/zephyr-doc/en/Cover.html" class="external-link">software online
+manual</a>.</p>
+<p>To start the reconstruction, click <strong>Run</strong> in the
+<em>“Start reconstruction”</em> page.</p>
+<p>You will be presented with the <em>“Reconstruction Successful
+page”</em>. Click <strong>Finish</strong>.</p>
+<p>Save the project in your project folder.</p>
+<p>Once the camera orientation phase has been completed, the sparse
+point cloud will appear in the workspace as well as the oriented cameras
+identified by blue pyramids.</p>
+<p>Now you can familiarise yourself with the navigation of the 3D space
+and the interface.</p>
+<p>For example, go to <strong>Scene &gt; Bounding Box &gt; Edit Bounding
+box</strong> and limit the created sparse cloud within the bounding
+box.</p>
+<p>This will speed up the process when creating the final mesh.</p>
+<figure><img src="fig/Box_High_PointCloud.jpg" alt="pointcloud" class="figure mx-auto d-block"><div class="figcaption">Sparse point cloud generated by 3DFlow ZEPHYR
+software</div>
+</figure></section><section><h2 class="section-heading" id="step-6-build-a-dense-point-cloud">Step 6: Build a dense point cloud<a class="anchor" aria-label="anchor" href="#step-6-build-a-dense-point-cloud"></a>
+</h2>
+<hr class="half-width">
+<p>Go to<strong>Workflow</strong>in the menu and select <strong>Advanced
+&gt; Dense Point Cloud Generation</strong>.</p>
+<p>You will be presented with the <em>“Dense Point Cloud Generation
+wizard”</em>. <strong>Select All Cameras</strong> and click
+<strong>Next&gt;</strong></p>
+<p>When presented with the <em>“Dense Point Cloud Creation”</em> page,
+leave the general settings and click <strong>Next&gt;</strong></p>
+<p>Click <strong>Run</strong> on the<em>“Start Densification”</em>
+page.</p>
+<p>When finished, you will see the <em>“Dense Point Cloud generation
+successful”</em> page. Click <strong>Finish</strong>.</p>
+<p>Save the project.</p>
+<figure><img src="fig/Box_DensePointCloud.jpg" alt="Dense point cloud generated by 3DFlow ZEPHYR software" class="figure mx-auto d-block"><div class="figcaption">Dense point cloud generated by 3DFlow ZEPHYR
+software</div>
+</figure></section><section><h2 class="section-heading" id="step-7-cleaning-the-dense-cloud">Step 7: Cleaning the dense cloud<a class="anchor" aria-label="anchor" href="#step-7-cleaning-the-dense-cloud"></a>
+</h2>
+<hr class="half-width">
+<p>Before trying to create the final mesh, it is useful to delete all
+the unwanted points. The same bounding box can be used, or the unwanted
+points can be deleted manually.</p>
+<p>Go to the <em>Editing panel</em> on your right and choose <strong>By
+Hand</strong>. Choose <strong>Poly</strong> and
+<strong>Remove</strong>.</p>
+<p>Start selecting the points that you do not need and once selected
+deleted them with the delete key.</p>
+<p>Once happy save the project.</p>
+</section><section><h2 class="section-heading" id="step-8-building-the-3d-model">Step 8: Building the 3D model<a class="anchor" aria-label="anchor" href="#step-8-building-the-3d-model"></a>
+</h2>
+<hr class="half-width">
+<p>Go to<strong>Workflow</strong>in the menu and select <strong>Advanced
+&gt; Mesh Extraction</strong></p>
+<p>You will be presented with the <em>“Mesh Generation wizard”</em>.</p>
+<p>Select from the <em>drop down</em> the name of your dense point
+cloud. <strong>Select All Cameras</strong> and click
+<strong>Next&gt;</strong></p>
+<p>Leave the general settings on the <em>“Surface Reconstruction”</em>
+page and click <strong>Next&gt;</strong></p>
+<p>Click <strong>Run</strong> on the<em>“Start Mesh Creation”</em>
+page.</p>
+<p>When finished you will see the <em>“Mesh Creation successful”</em>
+page. Click <strong>Finish</strong>. This process will produce a 3D
+model.</p>
+<p>Save the project.</p>
+<figure><img src="fig/Box_High_Wireframe.jpg" style="width:50.0%" alt="3D model" class="figure mx-auto d-block"><div class="figcaption">3D model generated by 3DFlow ZEPHYR
+software</div>
+</figure></section><section><h2 class="section-heading" id="step-9-building-the-raster-texture">Step 9: Building the raster texture<a class="anchor" aria-label="anchor" href="#step-9-building-the-raster-texture"></a>
+</h2>
+<hr class="half-width">
+<p>The final step is to re-project the texture onto the 3D surface.</p>
+<p>Go to<strong>Workflow</strong>in the menu and select <strong>Textured
+Mesh Generation</strong>.</p>
+<p>You will be presented with the <em>“Textured Mesh Generation
+wizard”</em>. In the <em>drop down</em> menu select the name of your
+mesh. <strong>Select All Cameras</strong> and click
+<strong>Next&gt;</strong></p>
+<p>Leave the general settings in the <em>“Texturing”</em> page and click
+<strong>Next&gt;</strong></p>
+<p>Click <strong>Run</strong> on the <em>“Textured Mesh Generation
+wizard”</em> page.</p>
+<p>When finished you will see the <em>“Textured Mesh Generation wizard
+result”</em> page. Click <strong>Finish</strong>.</p>
+<p>Now you will have a 3D model with the texture.</p>
+<p>Save the project.</p>
+<p><img src="fig/BoxTexture_Low.jpg" alt="texture" class="figure"><img src="fig/Box_High_Textured.jpg" class="figure"></p>
+</section><section><h2 class="section-heading" id="step-10-exporting-the-3d-model">Step 10: Exporting the 3D model<a class="anchor" aria-label="anchor" href="#step-10-exporting-the-3d-model"></a>
+</h2>
+<hr class="half-width">
+<p>At this point, we can export the 3D model.</p>
+<p>Create another folder called <em>“Exports”</em> within your project
+folder and save the model in this folder.</p>
+<p>It will be useful to export various 3D models at various resolutions.
+This will allow you to keep a high-resolution 3D model, while having a
+low-resolution 3D model for sharing and making available on the web.</p>
+<p>It is good practice to name your models with information, for
+example:</p>
+<pre><code><span>    <span class="va">ResourceIDofObjectifExistent_NameofObject_DateModelCreatedYY.MM.DD.</span><span class="op">[</span><span class="va">highres</span><span class="op">|</span><span class="va">medres</span><span class="op">|</span><span class="va">lowres</span><span class="op">]</span></span></code></pre>
+<p>Go to <strong>Export</strong> in the menu and select <strong>Export
+Textured Mesh</strong>.</p>
+<p>Select from the <em>drop down</em>, the name of your mesh.</p>
+<p>Select from the <em>drop down</em> your preferred format and click
+<strong>Export</strong>.</p>
+<p>To export the model at a lower resolution select your textured mesh
+in the right window <em>“Textured Meshes”</em>. <strong>Right
+Click</strong> on it and select <strong>Clone</strong>. A copy of your
+mesh will be created.</p>
+<p>Go to <strong>Tools</strong> in the menu and select <strong>Mesh
+Filters &gt; Decimation</strong>. You will be presented with the
+<em>“Mesh decimation”</em> window.</p>
+<p>Select in the <em>drop down</em> menu the name of your cloned mesh.
+Select <strong>preserve boundaries</strong> and <strong>Apply
+Filter</strong>.</p>
+<p>At this point, we need to regenerate the texture for the
+lower-resolution mesh. To do so we need to repeat the process above for
+generating the texture.</p>
+<p>Go to <strong>Export</strong> in the menu and select <strong>Export
+Textured Mesh</strong>. Select in the <em>drop down</em> menu the name
+of your second mesh.</p>
+<p>For web sharing GLTF is a good format to use. Select from <em>drop
+down</em> menu the format <strong><em>.glb</em></strong> or
+<strong><em>.gltf</em></strong> and click <strong>Export</strong>.</p>
+<iframe src="https://gltf-viewer.donmccurdy.com#kiosk=1&amp;model=https://data.d4science.org/shub/E_azJzMVp6MENORnRUd0FEdElCa3g5WVBIdEQ5cldBUlJwOHkyYjRITHpTYmVUcFdIUDc1VzRhWTFGdWc5SytNVA==" style="width: 100%;" height="400px" bgcolor="#dbdbdb" frameborder="0">
+</iframe>
+<div id="challenge-processing-the-photos-and-creating-a-3d-model" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="challenge-processing-the-photos-and-creating-a-3d-model" class="callout-inner">
+<h3 class="callout-title">Challenge: Processing the photos and creating
+a 3D model</h3>
+<div class="callout-content">
+<p><strong><em>This activity can be done as a team</em></strong></p>
+<p>By using the images you captured during the lesson, use the software
+to create a 3D model.</p>
+<p>Produce two versions: a high-resolution and a low-resolution and save
+on your PC.</p>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-technologies-for-sensing"><p>Content from <a href="technologies-for-sensing.html">Technologies for sensing</a></p>
+<hr>
+<p>Last updated on 2024-11-26 |
+
+        <a href="https://github.com/karina-rodriguez/2024-VR-sensing/edit/main/episodes/technologies-for-sensing.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<section><h2 class="section-heading" id="sensing-data">Sensing data<a class="anchor" aria-label="anchor" href="#sensing-data"></a>
+</h2>
+<hr class="half-width">
+<figure><img src="fig/AdobeStock_25679833.jpeg" alt="sensors" class="figure mx-auto d-block"><div class="figcaption">Microchip board with sensor © Kadmy from
+AdobeStock</div>
+</figure><p>Sensors <strong>sample signals</strong> that measure real world
+physical data. This includes sampling:</p>
+<ul>
+<li>Acceleration forces (accelerometer)</li>
+<li>Visible light (photosensors)</li>
+<li>Images (CCD sensor)</li>
+<li>Distances to objects (laser based detection)</li>
+<li>Other data including temperature, humidity, pressure, wind direction
+and speed, illumination intensity, vibration intensity, sound intensity,
+power-line voltage, chemical concentrations, pollutant levels and vital
+body functions.</li>
+</ul>
+<p><strong>Samples</strong> are converted into numeric values that can
+be manipulated by a computer.</p>
+<p>Driven by the low cost, many of the devices which we use today
+contain sensors. This allows us to sense data all around us.Most of
+these sensors are relevant for <a href="https://www.youtube.com/watch?v=DidxdOAkpwA" class="external-link">Internet of
+Things</a>, and Internet of Place technologies.</p>
+<p><a href="https://www.youtube.com/watch?v=DidxdOAkpwA" title="IoT technologies" class="external-link"><img src="https://i.ytimg.com/vi/DidxdOAkpwA/maxresdefault.jpg" alt="IMAGE ALT TEXT" class="figure"></a></p>
+<p>Sensors also allows objects and environments to respond and interact
+with their environment.</p>
+<p>Building on their wide availability, sensors also allow Virtual
+Reality and Mixed Reality to be more affordable.</p>
+<div id="challenge-vr-sensors" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="challenge-vr-sensors" class="callout-inner">
+<h3 class="callout-title">Challenge: VR sensors?</h3>
+<div class="callout-content">
+<p>Think on which sensors are used by VR headests?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>VR headset can include a variety of sensors, including:</p>
+<ul>
+<li>Inertial Measurement Unit (IMU) to measures force and angular rate
+by using a gyroscope, accelerometer and magnetometer.</li>
+<li>Image sensor</li>
+<li>Proximity sensor</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="motion-capture">Motion capture<a class="anchor" aria-label="anchor" href="#motion-capture"></a>
+</h2>
+<hr class="half-width">
+<p>Detecting motion is of interest to many applications, including the
+film and game industry. Sensors can detect any moving objects, and for
+many years they have been used fro detecting movement of people’s
+bodies.</p>
+<p>This is in particular relevant for animation of digital data. It
+allows to transfers the movement of an actor to a digital character.</p>
+<p>Requires to have a 3D polygonal mesh which is ready for
+animation.</p>
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Motion_Capture_with_Chad_Phantom.png" alt="3d model" class="figure mx-auto d-block"><div class="figcaption">Real-life motion data (left) is acquired on a
+motion capture platform (center) and used to determine the posture of
+the CHAD phantom (right) © Vazquez88</div>
+</figure><p>However, remember polygonal meshes are RIGID. They do cannot be
+easily deformed. For this, animators undertake a process to
+<strong>animated</strong> or transform sections of the polygonal
+mesh.</p>
+<p>This requires creating a system of <em>joints</em> (similar than our
+human body). This process is known as rigging. A rig is the digital
+skeleton formed of joints and bones.</p>
+<p>This functionality is offered by modelling packages, and game
+engines:</p>
+<ul>
+<li>Unity: <a href="https://docs.unity3d.com/Manual/AnimationSection.html" class="external-link uri">https://docs.unity3d.com/Manual/AnimationSection.html</a>
+</li>
+<li>Unreal: <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/animating-characters-and-objects-in-unreal-engine" class="external-link uri">https://dev.epicgames.com/documentation/en-us/unreal-engine/animating-characters-and-objects-in-unreal-engine</a>
+</li>
+<li>Godot: <a href="https://docs.godotengine.org/en/stable/tutorials/animation/introduction.html" class="external-link uri">https://docs.godotengine.org/en/stable/tutorials/animation/introduction.html</a>
+</li>
+</ul>
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Two_repetitions_of_a_walking_sequence_of_an_individual_recorded_using_a_motion-capture_system.gif" alt="motion" class="figure mx-auto d-block"><div class="figcaption">Two repetitions of a walking sequence recorded
+using a motion-capture system. The spatial trajectories of limb
+movements are highly similar despite of the timing of movement differing
+between repetitions. Data are presented and analyzed in the paper
+Simultaneous inference for misaligned multivariate functional data ©
+Lars Lau Raket</div>
+</figure><p>Below you will find details on the different technologies for
+capturing data for animation.</p>
+</section><section><h2 class="section-heading" id="types-of-tracking-systems-for-motion-capture">Types of Tracking Systems for Motion Capture<a class="anchor" aria-label="anchor" href="#types-of-tracking-systems-for-motion-capture"></a>
+</h2>
+<hr class="half-width">
+<p>There are different type of systems: optical vs non optical
+systems.</p>
+<div class="section level3">
+<h3 id="non-optical-tracking">Non-optical tracking<a class="anchor" aria-label="anchor" href="#non-optical-tracking"></a>
+</h3>
+<ul>
+<li>Based on sensors which measure inertia or mechanical motion,
+including accelerometer electromechanical device that measure
+acceleration forces.</li>
+<li>Come often with easy wearable systems.</li>
+<li>Enable accurate motion capture.</li>
+</ul>
+<p>For example, <a href="https://www.youtube.com/watch?v=-0hSQFbt67U&amp;t=1s" class="external-link">Xsens MVN
+solution for 3D Character Animation</a>.</p>
+<p><a href="https://www.youtube.com/watch?v=-0hSQFbt67U" title="3D chracater" class="external-link"><img src="https://i.ytimg.com/vi/-0hSQFbt67U/maxresdefault.jpg" alt="Xsens MVN solution for 3D Character Animation" class="figure"></a></p>
+</div>
+<div class="section level3">
+<h3 id="optical-tracking">Optical tracking<a class="anchor" aria-label="anchor" href="#optical-tracking"></a>
+</h3>
+<ul>
+<li>Use multiple digital cameras.</li>
+<li>Based on the information provided by the cameras looking at the
+element in motion-tracked within a limited area.</li>
+<li>Use position markers in the environment.</li>
+<li>Assemble the data into an approximation of the actor’s motion.</li>
+<li>The specific technology is based on the role light plays in the
+capture process: active versus passive system.</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=O0mLfzbmqcg" class="external-link"><img src="https://i.ytimg.com/vi/O0mLfzbmqcg/maxresdefault.jpg" alt="ALT TEXT" class="figure"></a></p>
+</div>
+<div class="section level3">
+<h3 id="active-tracking">Active tracking<a class="anchor" aria-label="anchor" href="#active-tracking"></a>
+</h3>
+<ul>
+<li>Markers are based on light such as LEDs.</li>
+<li>Systems illuminate one LED or multiple LEDs at a time.</li>
+<li>Software identify markers by their relative positions.</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="passive-tracking">Passive tracking<a class="anchor" aria-label="anchor" href="#passive-tracking"></a>
+</h3>
+<p>Based on information provided by one or more digital cameras,
+including depth sensors.</p>
+<p>This allows for example hand and finger tracking</p>
+<p>VR devices now come with depth camera system for finger tracking.</p>
+<p><a href="https://www.youtube.com/watch?v=rnlCGw-0R8g" class="external-link"><img src="https://i.ytimg.com/vi/rnlCGw-0R8g/maxresdefault.jpg" alt="ALT TEXT" class="figure"></a></p>
+<div class="section level4">
+<h4 id="hybrid-systems">Hybrid systems<a class="anchor" aria-label="anchor" href="#hybrid-systems"></a>
+</h4>
+<ul>
+<li>Use accelerometers and images.</li>
+<li>Features in the images are used as markers.</li>
+<li>Similar to Structure from Motion technology.</li>
+</ul>
+<p>Augmented Reality Systems make use of hybrid systems for <a href="https://www.youtube.com/watch?v=2y7NX-HUlMc&amp;t=301s" class="external-link">tracking
+capabilities</a>. <a href="https://www.youtube.com/watch?v=2y7NX-HUlMc" class="external-link"><img src="https://i.ytimg.com/vi/2y7NX-HUlMc/maxresdefault.jpg" alt="ALT TEXT" class="figure"></a></p>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="advantages-and-disadvantages">Advantages and disadvantages<a class="anchor" aria-label="anchor" href="#advantages-and-disadvantages"></a>
+</h2>
+<hr class="half-width">
+<p>Non-optical systems are portable but can restrict movement.</p>
+<p>Optical systems can be very precise, but are non portable.</p>
+</section><section><h2 class="section-heading" id="performance-and-cost">Performance and cost<a class="anchor" aria-label="anchor" href="#performance-and-cost"></a>
+</h2>
+<hr class="half-width">
+<p>An important metric for sensing is the accuracy of the system. This
+includes both hardware and software.</p>
+<p>Active methods are more accurate, depending on the emitting power of
+the light source. But they tend to have a higher cost.</p>
+<p>Passive methods are reliant on the ability to find features in the
+scene, but have a lower cost. <!--
+## Image sensors
+
+In a camera system,
+the image sensor receives incident light (photons)
+and transform it into a digital image.
+
+
+Active and passive methods.
+
+Active methods provide their own source of energy to illuminate the objects they observe.
+
+For instance LIDAR (Light Detection and Ranging), depth sensor and 3D scanners.
+--></p>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
 </section></section><section id="aio-tracking-in-vr"><p>Content from <a href="tracking-in-vr.html">Tracking in VR</a></p>
 <hr>
 <p>Last updated on 2024-11-26 |
@@ -1058,18 +1313,14 @@ user’s position and orientation.</p>
 <p>As before, tracking can be optical vs non optical. We will focus on
 the optical, and make a distinction between outside-in and inside-out
 tracking.</p>
-<figure><img src="https://xinreality.com/mediawiki/images/5/5a/Inside_out_vs._outside_in_tracking.png" alt="outside in and inside out" class="figure mx-auto d-block"><div class="figcaption">Inside-out vs. outside-in tracking © <a href="https://xinreality.com/wiki/File:Inside_out_vs._outside_in_tracking.png" class="external-link">Ishii
-from under CC BY-SA 3.0</a>
-</div>
-</figure><div class="section level3">
-<h3 id="optical-outside-in-tracking">Optical outside-in tracking<a class="anchor" aria-label="anchor" href="#optical-outside-in-tracking"></a>
-</h3>
+</section><section><h2 class="section-heading" id="optical-outside-in-tracking">Optical outside-in tracking<a class="anchor" aria-label="anchor" href="#optical-outside-in-tracking"></a>
+</h2>
+<hr class="half-width">
 <p>In this type of tracking, cameras are placed in stationary locations
 in the environment to track the position of markers on the tracked
 device. For example, the HTC VIVE uses outside-in tracking.</p>
 <p>IR LEDs on its headset and controllers allow external cameras in the
 environment to read their positions.</p>
-</div>
 </section><section><h2 class="section-heading" id="optical-inside-out-tracking">Optical Inside-out tracking<a class="anchor" aria-label="anchor" href="#optical-inside-out-tracking"></a>
 </h2>
 <hr class="half-width">

@@ -108,11 +108,11 @@
   Sensing and tracking 3D environments
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 80%" class="percentage">
-    80%
+<aside class="col-md-12 lesson-progress"><div style="width: 92%" class="percentage">
+    92%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 80%" aria-valuenow="80" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 92%" aria-valuenow="92" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -205,7 +205,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="technologies-for-sensing.html">2. Technologies for sensing</a>
+        <a href="structure-from-motion.html">2. Structure from Motion</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -214,7 +214,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="structure-from-motion.html">3. Structure from Motion</a>
+        <a href="creating-3d-models-via-sfm.html">3. Creating 3D models via SfM</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -223,7 +223,16 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="creating-3d-models-via-sfm.html">4. Creating 3D models via SfM</a>
+        <a href="software-workflow.html">4. Software Workflow</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="technologies-for-sensing.html">5. Technologies for sensing</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -235,7 +244,7 @@
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
-        5. Tracking in VR
+        6. Tracking in VR
         </span>
       </button>
     </div><!--/div.accordion-header-->
@@ -244,6 +253,7 @@
       <div class="accordion-body">
         <ul><li><a href="#what-do-we-track">What do we track?</a></li>
 <li><a href="#types-of-tracking">Types of tracking</a></li>
+<li><a href="#optical-outside-in-tracking">Optical outside-in tracking</a></li>
 <li><a href="#optical-inside-out-tracking">Optical Inside-out tracking</a></li>
 <li><a href="#slam-simultaneous-localization-and-mapping">SLAM (Simultaneous localization and mapping)</a></li>
         </ul></div><!--/div.accordion-body-->
@@ -294,14 +304,14 @@
         <!-- START: inst/pkgdown/templates/content-instructor.html -->
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
-        <a class="chapter-link" href="creating-3d-models-via-sfm.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
+        <a class="chapter-link" href="technologies-for-sensing.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link" href="creating-3d-models-via-sfm.html" rel="prev">
+        <a class="chapter-link" href="technologies-for-sensing.html" rel="prev">
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
-          Previous: Creating 3D models
+          Previous: Technologies for
         </a>
         <a class="chapter-link float-end" href="index.html" rel="next">
           Home
@@ -354,17 +364,12 @@ user’s position and orientation.</p>
 <hr class="half-width"><p>As before, tracking can be optical vs non optical. We will focus on
 the optical, and make a distinction between outside-in and inside-out
 tracking.</p>
-<figure><img src="https://xinreality.com/mediawiki/images/5/5a/Inside_out_vs._outside_in_tracking.png" alt="outside in and inside out" class="figure mx-auto d-block"><div class="figcaption">Inside-out vs. outside-in tracking © <a href="https://xinreality.com/wiki/File:Inside_out_vs._outside_in_tracking.png" class="external-link">Ishii
-from under CC BY-SA 3.0</a>
-</div>
-</figure><div class="section level3">
-<h3 id="optical-outside-in-tracking">Optical outside-in tracking<a class="anchor" aria-label="anchor" href="#optical-outside-in-tracking"></a></h3>
-<p>In this type of tracking, cameras are placed in stationary locations
+</section><section><h2 class="section-heading" id="optical-outside-in-tracking">Optical outside-in tracking<a class="anchor" aria-label="anchor" href="#optical-outside-in-tracking"></a></h2>
+<hr class="half-width"><p>In this type of tracking, cameras are placed in stationary locations
 in the environment to track the position of markers on the tracked
 device. For example, the HTC VIVE uses outside-in tracking.</p>
 <p>IR LEDs on its headset and controllers allow external cameras in the
 environment to read their positions.</p>
-</div>
 </section><section><h2 class="section-heading" id="optical-inside-out-tracking">Optical Inside-out tracking<a class="anchor" aria-label="anchor" href="#optical-inside-out-tracking"></a></h2>
 <hr class="half-width"><p>The camera is placed on the tracked device and looks outward to
 determine its location in the environment.</p>
@@ -384,14 +389,14 @@ any links that you are not going to use.
  -->
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
-        <a class="chapter-link" href="creating-3d-models-via-sfm.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
+        <a class="chapter-link" href="technologies-for-sensing.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link" href="creating-3d-models-via-sfm.html" rel="prev">
+        <a class="chapter-link" href="technologies-for-sensing.html" rel="prev">
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
-          Previous: Creating 3D models
+          Previous: Technologies for
         </a>
         <a class="chapter-link float-end" href="index.html" rel="next">
           Home
