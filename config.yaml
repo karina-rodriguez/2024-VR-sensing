@@ -60,9 +60,10 @@ contact: 'K.rodriguez@brigthon.ac.uk'
 # Order of episodes in your lesson
 episodes:
 - introduction.Rmd
-- technologies-for-sensing.Rmd
 - structure-from-motion.Rmd
 - creating-3d-models-via-sfm.Rmd
+- software-workflow.Rmd
+- technologies-for-sensing.Rmd
 - tracking-in-vr.Rmd
 
 # Information for Learners

@@ -46,11 +46,10 @@ As before, tracking can be optical vs non optical. We will
 focus on the optical, and make a distinction
 between outside-in and inside-out tracking.
 
-![Inside-out vs. outside-in tracking &copy; [Ishii from under CC BY-SA 3.0](https://xinreality.com/wiki/File:Inside_out_vs._outside_in_tracking.png)](https://xinreality.com/mediawiki/images/5/5a/Inside_out_vs._outside_in_tracking.png){alt='outside in and inside out'}
 
 
 
-### Optical outside-in tracking
+## Optical outside-in tracking
 
 In this type of tracking, cameras are placed in stationary 
 locations in the environment to track the position of markers 
