@@ -35,7 +35,7 @@ Tracking our physical environment is an important part of Virtual and Mixed Real
 
 ## Challenge: Why tracking a physical environment?
 
-Think why tracking a physical environment is relevant to 
+Why tracking a physical environment is relevant to 
 the development of VR/MR applications
 
 
@@ -53,9 +53,9 @@ interact with digital content within the same space.
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-Tracking a user is particularly relevant for VR applications.
-
-Increasingly important is tracking the physical space surrounding the user.
+Tracking users is particularly relevant for VR/MR applications. It allows
+to determine the position and orientation of the users; as well
+as sensing and providing information regarding the physical space surrounding the user.
 
 <iframe title="Charité University Hospital - Operating Room" frameborder="0" allowfullscreen mozallowfullscreen="true" 
 webkitallowfullscreen="true" allow="autoplay; 
@@ -66,18 +66,18 @@ execution-while-out-of-viewport execution-while-not-rendered web-share src="http
 [Queisner M, Pogorzhelskiy M, Remde C, Pratschke J, Sauer IM. VolumetricOR: A New Approach to Simulate Surgical Interventions in Virtual Reality for Training and Education. Surg Innov. 2022 Jun;29(3):406-415. doi: 10.1177/15533506211054240. Epub 2022 Feb 9. PMID: 35137646; PMCID: PMC9438748.](https://sketchfab.com/3d-models/charite-university-hospital-operating-room-9ec46c4d615a4581a235eebfb162f574)
 
 For instance, to understand how the user moves in space or 
-seamlessly augment content in our physical space, we need spatial information
+seamlessly augment content in our physical space, 
+we need spatial information
 about it.
 
 ![&copy; REDPIXEL from AdobeStock](fig/AdobeStock_250036555.jpeg)
 An additional challenge is that things in our space are constantly
 moving, and being subject to the laws of physics.
 
-
 Not only a localization problem, but also a measuring problem. 
 It requires the computer to 
 determine the exact position of the user and of 
-obstacles in the surrounding environment.
+obstacles in the surrounding environment in real time.
 
 All of this needs to be computed at interactive rates or fast enough
 for the system to operate.
