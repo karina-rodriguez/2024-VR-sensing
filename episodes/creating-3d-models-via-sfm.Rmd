@@ -63,7 +63,7 @@ Overall, the recommendation is to **avoid plain and monotonous surfaces**. Flat,
 
 **Moving objects** (e.g. leaves of a tree or people walking)  are not good candidates either. 
 
-Some objects are **shinny** and the **reflections** will result in having lots of noise, hence a ‘bad’ model. Adding talc or corn-starch on the surface of the object could be a solution but this cannot be applied on most cultural heritage artefacts.
+Some objects are **shinny** and the **reflections** will result in having lots of noise, hence a ‘bad’ model. Adding talc or corn-starch on the surface of the object could be a solution.
 
 Significant colour changes or colour designs on a relatively plain surface could provide good reference points and help us to produce a model. 
 

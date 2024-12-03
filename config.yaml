@@ -61,6 +61,7 @@ contact: 'K.rodriguez@brigthon.ac.uk'
 episodes:
 - introduction.Rmd
 - structure-from-motion.Rmd
+- process-overview.Rmd
 - creating-3d-models-via-sfm.Rmd
 - software-workflow.Rmd
 - technologies-for-sensing.Rmd

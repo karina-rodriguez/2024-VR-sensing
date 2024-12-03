@@ -8,21 +8,27 @@ exercises: 2
 Also known as photogrammetry.
 
 
-Both terms are used to refer to the computing process of estimating the 3D structure of a scene from a set of 2D raster images. A photogrammetry software receives as an **input** a set of raster images of an object or environment and  **outputs** a 3D model.
+Both terms are used to refer to the computing process of estimating the 3D structure of a scene from a set of 2D raster images. 
 
-
-### Definition
-Defined by the American Society for Photogrammetry and Remote Sensing, photogrammetry is the practice of gathering reliable data about physical objects and environments through the recording, measurement, and interpretation of photographic images. 
-
-Photogrammetry is a highly favoured technique for documenting the shape and appearance of cultural heritage objects due to its cost-effectiveness. 
+>A photogrammetry software receives as an **input** a set of raster images of an object or environment and  **outputs** a 3D model.
 
 Essentially, it entails taking 2D photos with a camera and using specialised software to create a 3D model. 
 
-This process involves the software initially identifying features in the images, followed by matching these features, and finally reconstructing the 3D object, with or without colour.
+### Definition
+Defined by the American Society for Photogrammetry and Remote Sensing, **photogrammetry** is *the practice of gathering reliable data about physical objects and environments through the recording, measurement, and interpretation of photographic images*. 
+
+Photogrammetry is a popular technique for digitisation due to its cost-effectiveness. It is a passive acquisition technique (contrary to scanning).
+However, it is effective at providing 3-dimensional information about objects and environments.
+
+
+
+[![IMAGE ALT TEXT](https://i.ytimg.com/vi/4LxlhoemR3A/maxresdefault.jpg)](https://www.youtube.com/watch?v=4LxlhoemR3A
+ "SfM video")
 
 ### How does it do it?
-The underlying technology is more familiar than you might think! It is based on the same principles that the ones used by our vision system to perceive the 3-dimensional world. 
+This process involves the software initially identifying features in the images, followed by matching these features, and finally reconstructing the 3D object, with or without colour.
 
+The underlying technology is more familiar than you might think! It is based on the same principles that the ones used by our vision system to perceive the 3-dimensional world. 
 
 ![Bernard de Go Mars under Public Domain &copy; from [Wikimedia] (https://commons.wikimedia.org/w/index.php?curid=25846)](fig/Yokohama4MaidsChrysanthemum.jpg){alt="two views" width="60%"}
 
