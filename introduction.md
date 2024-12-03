@@ -35,7 +35,7 @@ Tracking our physical environment is an important part of Virtual and Mixed Real
 
 ## Challenge: Why tracking a physical environment?
 
-Why tracking a physical environment is relevant to 
+Why tracking a physical object (or rigid body) is relevant to 
 the development of VR/MR applications
 
 
@@ -44,18 +44,23 @@ the development of VR/MR applications
 
 ## Output
  
-Tracking allows the system to understand how a user is moving with respect
-to their physical environment, as well as allowing the user to 
-seamlessly
+Tracking objects/people allows a system to draw frames with digital content
+which interacts with the physical environment, including movements from the user
+or objects within the phyiscal environment (e.g. sofas, tables, trees, buildings).
+
+These technologies allow users to seamlessly
 interact with digital content within the same space.
+
+
 
 :::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-Tracking users is particularly relevant for VR/MR applications. It allows
-to determine the position and orientation of the users; as well
-as sensing and providing information regarding the physical space surrounding the user.
+Tracking objects/people is particularly relevant for Virtual Reality/Mixed Reality applications. 
+It allows
+sensing and providing information regarding the physical space surrounding the user.
+This might be useful to determine the position and orientation of the objects/people.
 
 <iframe title="Charité University Hospital - Operating Room" frameborder="0" allowfullscreen mozallowfullscreen="true" 
 webkitallowfullscreen="true" allow="autoplay; 
@@ -70,14 +75,18 @@ seamlessly augment content in our physical space,
 we need spatial information
 about it.
 
-![&copy; REDPIXEL from AdobeStock](fig/AdobeStock_250036555.jpeg)
-An additional challenge is that things in our space are constantly
-moving, and being subject to the laws of physics.
+![&copy; REDPIXEL from AdobeStock](fig/AdobeStock_250036555.jpeg){alt="image office"}
 
-Not only a localization problem, but also a measuring problem. 
+
+This is not only a localization problem, but also a measuring problem. 
 It requires the computer to 
 determine the exact position of the user and of 
 obstacles in the surrounding environment in real time.
+
+
+An additional challenge is that things in our environment are constantly
+moving, and being subject to the laws of physics (e.g. lighting, wind, temperature).
+
 
 All of this needs to be computed at interactive rates or fast enough
 for the system to operate.
