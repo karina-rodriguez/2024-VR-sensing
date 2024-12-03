@@ -259,7 +259,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="creating-3d-models-via-sfm.html">3. Creating 3D models via SfM</a>
+        <a href="process-overview.html">3. Process Overview</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -271,7 +271,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="software-workflow.html">4. Software Workflow</a>
+        <a href="creating-3d-models-via-sfm.html">4. Creating 3D models via SfM</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -283,7 +283,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="technologies-for-sensing.html">5. Technologies for sensing</a>
+        <a href="software-workflow.html">5. Software Workflow</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -295,7 +295,19 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="tracking-in-vr.html">6. Tracking in VR</a>
+        <a href="technologies-for-sensing.html">6. Technologies for sensing</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush8">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading8">
+        <a href="tracking-in-vr.html">7. Tracking in VR</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -418,8 +430,8 @@ Mixed Reality applications.</p>
 <h3 class="callout-title">Challenge: Why tracking a physical
 environment?</h3>
 <div class="callout-content">
-<p>Why tracking a physical environment is relevant to the development of
-VR/MR applications</p>
+<p>Why tracking a physical object (or rigid body) is relevant to the
+development of VR/MR applications</p>
 </div>
 </div>
 </div>
@@ -432,17 +444,21 @@ VR/MR applications</p>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<p>Tracking allows the system to understand how a user is moving with
-respect to their physical environment, as well as allowing the user to
-seamlessly interact with digital content within the same space.</p>
+<p>Tracking objects/people allows a system to draw frames with digital
+content which interacts with the physical environment, including
+movements from the user or objects within the phyiscal environment
+(e.g. sofas, tables, trees, buildings).</p>
+<p>These technologies allow users to seamlessly interact with digital
+content within the same space.</p>
 </div>
 </div>
 </div>
 </div>
-<p>Tracking users is particularly relevant for VR/MR applications. It
-allows to determine the position and orientation of the users; as well
-as sensing and providing information regarding the physical space
-surrounding the user.</p>
+<p>Tracking objects/people is particularly relevant for Virtual
+Reality/Mixed Reality applications. It allows sensing and providing
+information regarding the physical space surrounding the user. This
+might be useful to determine the position and orientation of the
+objects/people.</p>
 <iframe title="Charité University Hospital - Operating Room" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay;
 fullscreen; xr-spatial-tracking" xr-spatial-tracking width="100%;" height="400px;" execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9ec46c4d615a4581a235eebfb162f574/embed">
 </iframe><p><a href="https://sketchfab.com/3d-models/charite-university-hospital-operating-room-9ec46c4d615a4581a235eebfb162f574" class="external-link">Queisner
@@ -454,12 +470,13 @@ PMC9438748.</a></p>
 <p>For instance, to understand how the user moves in space or seamlessly
 augment content in our physical space, we need spatial information about
 it.</p>
-<p><img src="../fig/AdobeStock_250036555.jpeg" alt="© REDPIXEL from AdobeStock" class="figure"> An additional challenge is that
-things in our space are constantly moving, and being subject to the laws
-of physics.</p>
-<p>Not only a localization problem, but also a measuring problem. It
-requires the computer to determine the exact position of the user and of
-obstacles in the surrounding environment in real time.</p>
+<figure><img src="../fig/AdobeStock_250036555.jpeg" alt="image office" class="figure mx-auto d-block"><div class="figcaption">© REDPIXEL from AdobeStock</div>
+</figure><p>This is not only a localization problem, but also a measuring
+problem. It requires the computer to determine the exact position of the
+user and of obstacles in the surrounding environment in real time.</p>
+<p>An additional challenge is that things in our environment are
+constantly moving, and being subject to the laws of physics
+(e.g. lighting, wind, temperature).</p>
 <p>All of this needs to be computed at interactive rates or fast enough
 for the system to operate.</p></section><section id="aio-structure-from-motion"><p>Content from <a href="structure-from-motion.html">Structure from Motion</a></p>
 <hr>
@@ -472,29 +489,34 @@ for the system to operate.</p></section><section id="aio-structure-from-motion">
         </div>
 <p><img src="../fig/AdobeStock_656775682.svg" style="width:60.0%" alt="icon" class="figure"> Also known as photogrammetry.</p>
 <p>Both terms are used to refer to the computing process of estimating
-the 3D structure of a scene from a set of 2D raster images. A
-photogrammetry software receives as an <strong>input</strong> a set of
-raster images of an object or environment and <strong>outputs</strong> a
-3D model.</p>
+the 3D structure of a scene from a set of 2D raster images.</p>
+<blockquote>
+<p>A photogrammetry software receives as an <strong>input</strong> a set
+of raster images of an object or environment and
+<strong>outputs</strong> a 3D model.</p>
+</blockquote>
+<p>Essentially, it entails taking 2D photos with a camera and using
+specialised software to create a 3D model.</p>
 <div class="section level3">
 <h3 id="definition">Definition<a class="anchor" aria-label="anchor" href="#definition"></a>
 </h3>
 <p>Defined by the American Society for Photogrammetry and Remote
-Sensing, photogrammetry is the practice of gathering reliable data about
-physical objects and environments through the recording, measurement,
-and interpretation of photographic images.</p>
-<p>Photogrammetry is a highly favoured technique for documenting the
-shape and appearance of cultural heritage objects due to its
-cost-effectiveness.</p>
-<p>Essentially, it entails taking 2D photos with a camera and using
-specialised software to create a 3D model.</p>
-<p>This process involves the software initially identifying features in
-the images, followed by matching these features, and finally
-reconstructing the 3D object, with or without colour.</p>
+Sensing, <strong>photogrammetry</strong> is <em>the practice of
+gathering reliable data about physical objects and environments through
+the recording, measurement, and interpretation of photographic
+images</em>.</p>
+<p>Photogrammetry is a popular technique for digitisation due to its
+cost-effectiveness. It is a passive acquisition technique (contrary to
+scanning). However, it is effective at providing 3-dimensional
+information about objects and environments.</p>
+<p><a href="https://www.youtube.com/watch?v=4LxlhoemR3A" title="SfM video" class="external-link"><img src="https://i.ytimg.com/vi/4LxlhoemR3A/maxresdefault.jpg" alt="IMAGE ALT TEXT" class="figure"></a></p>
 </div>
 <div class="section level3">
 <h3 id="how-does-it-do-it">How does it do it?<a class="anchor" aria-label="anchor" href="#how-does-it-do-it"></a>
 </h3>
+<p>This process involves the software initially identifying features in
+the images, followed by matching these features, and finally
+reconstructing the 3D object, with or without colour.</p>
 <p>The underlying technology is more familiar than you might think! It
 is based on the same principles that the ones used by our vision system
 to perceive the 3-dimensional world.</p>
@@ -538,7 +560,165 @@ Albertz (2001) Albrecht Meydenbauer – Pioneer Of Photogrammetric
 Documentation Of The Cultural Heritage. Proceedings 18th International
 Symposium CIPA 2001</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
 </ol>
-</div></section><section id="aio-creating-3d-models-via-sfm"><p>Content from <a href="creating-3d-models-via-sfm.html">Creating 3D models via SfM</a></p>
+</div></section><section id="aio-process-overview"><p>Content from <a href="process-overview.html">Process Overview</a></p>
+<hr>
+<p>Last updated on 2024-12-03 |
+
+        <a href="https://github.com/karina-rodriguez/2024-VR-sensing/edit/main/episodes/process-overview.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<p>To generate a photogrammetric model, we might choose to overlook the
+concepts and formulas utilised within the software to produce such a
+model.</p>
+<p>Yet, understanding its functioning can be highly beneficial. Such
+understanding enables us to evaluate the feasibility of successfully
+acquiring objects and identify strategies to enhance our chances of
+success.</p>
+<section><h2 class="section-heading" id="basic-steps">Basic steps<a class="anchor" aria-label="anchor" href="#basic-steps"></a>
+</h2>
+<hr class="half-width">
+<p>The basic steps of photogrammetric processing are:</p>
+<ol style="list-style-type: decimal">
+<li>Feature detection</li>
+<li>Feature matching</li>
+<li>Structure reconstruction</li>
+</ol></section><section><h2 class="section-heading" id="feature-detection">Feature detection<a class="anchor" aria-label="anchor" href="#feature-detection"></a>
+</h2>
+<hr class="half-width">
+<p>Features are “interest points” or “key points” in an image.</p>
+<p>The goal of this step is to find points which are repeatable and
+distinctive.</p>
+<p>Corners and other distinctive patterns in the image are obvious
+features to consider.</p>
+<figure><img src="../fig/sift1.png" style="width:60.0%" alt="sift algorithm" class="figure mx-auto d-block"><div class="figcaption">Feature points in photograph of building © Lukas
+Mach at <a href="https://en.m.wikipedia.org/wiki/File:Sift_keypoints_filtering.jpg" class="external-link">English
+Wikipedia</a>
+</div>
+</figure><div id="challenge-try-it-yourself" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="challenge-try-it-yourself" class="callout-inner">
+<h3 class="callout-title">Challenge: Try it yourself</h3>
+<div class="callout-content">
+<p>Which points would you choose in this image of a building?</p>
+<figure><img src="../fig/Edifice_Shaughnessy.jpg" style="width:60.0%" alt="building" class="figure mx-auto d-block"><div class="figcaption">Édifice Shaughnessy, 401-407, rue McGill,
+Montréal © Jeangagnon at <a href="https://commons.wikimedia.org/wiki/File:Edifice_Shaughnessy_-_01.jpg" class="external-link">Wikimedia</a>
+</div>
+</figure><p>Why?</p>
+</div>
+</div>
+</div>
+<div id="challenge-try-it-yourself-1" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="challenge-try-it-yourself-1" class="callout-inner">
+<h3 class="callout-title">Challenge: Try it yourself</h3>
+<div class="callout-content">
+<p>Which points would you choose in this image of a vase?</p>
+<figure><img src="../fig/Vase_MET_45484.jpg" style="width:60.0%" alt="vase" class="figure mx-auto d-block"><div class="figcaption">Vase by Jersey Glass Company of George Dummer
+(MET, 20.48.1) © Metropolitan Museum of Art at <a href="https://commons.wikimedia.org/wiki/File:Vase_MET_45484.jpg" class="external-link">Wikimedia</a>
+</div>
+</figure><p>What makes this image different from the one before?</p>
+</div>
+</div>
+</div>
+<div id="challenge-try-it-yourself-2" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="challenge-try-it-yourself-2" class="callout-inner">
+<h3 class="callout-title">Challenge: Try it yourself</h3>
+<div class="callout-content">
+<p>Which points would you choose in this image of a silver mug?</p>
+<figure><img src="../fig/Mug_Adrian_Bancker.jpg" style="width:60.0%" alt="mugs" class="figure mx-auto d-block"><div class="figcaption">Silver mugs created by Adrian Bancker
+(1703-1772) between 1731-1750. Currently held by the Museum of the City
+of New York. © Adrian Bancker at <a href="https://commons.wikimedia.org/wiki/File:Mug_Adrian_Bancker.jpg" class="external-link">Wikimedia</a>
+</div>
+</figure><p>Does this share the same challenges with any of the images above?</p>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="feature-matching">Feature matching<a class="anchor" aria-label="anchor" href="#feature-matching"></a>
+</h2>
+<hr class="half-width">
+<p>The goal of this step is to find correspondences of features across
+different views.</p>
+<p>The software will attempt to match features in two or more images,
+ideally seeking a reliable outcome. We want a reliable result.</p>
+<figure><img src="../fig/feature_matching.png" style="width:60.0%" alt="Features matched" class="figure mx-auto d-block"><div class="figcaption">View of features matched by Metashape
+photogrammetry software on a dataset of a coloured carboard box. Blue
+lines display valid matches, and red lines display invalid
+matches.</div>
+</figure><div id="challenge-try-it-yourself-3" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="challenge-try-it-yourself-3" class="callout-inner">
+<h3 class="callout-title">Challenge: Try it yourself</h3>
+<div class="callout-content">
+<p>Do the features below correspond with each other?</p>
+<figure><img src="../fig/housematch.png" style="width:100.0%" alt="hosue match" class="figure mx-auto d-block"></figure>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="structure-reconstruction">Structure reconstruction<a class="anchor" aria-label="anchor" href="#structure-reconstruction"></a>
+</h2>
+<hr class="half-width">
+<p>Taking into account all identified features in a pair of images, the
+software builds a projection of the points in 3D space by using the
+camera position.</p>
+<figure><img src="../fig/Epipolar_Geometry1.svg" style="width:100.0%" alt="projection" class="figure mx-auto d-block"><div class="figcaption">Software computes 3D points describing the scene
+geometry © ZooFari in <a href="https://commons.wikimedia.org/w/index.php?curid=6591174" class="external-link">Wikimedia</a>
+</div>
+</figure><p>The scene is incrementally extended by adding new images and
+triangulating new points.</p>
+<figure><img src="../fig/pointcloud.png" style="width:100.0%" alt="point cloud" class="figure mx-auto d-block"><div class="figcaption">Point cloud projected by images</div>
+</figure><p>A much denser set of features is produced. The output of this process
+is a <strong>point cloud</strong> or a collection of points.</p>
+<figure><img src="../fig/denspointcloud.png" style="width:100.0%" alt="dense point cloud" class="figure mx-auto d-block"><div class="figcaption">Point cloud projected by images</div>
+</figure><p>The 3D model is created using what is know as triangulation. This
+process creates a 3D model with thousands or millions of triangles.</p>
+<figure><img src="../fig/traingulated.png" style="width:100.0%" alt="triangulated model" class="figure mx-auto d-block"><div class="figcaption">Triangulated point cloud projected by
+images</div>
+</figure><figure><img src="../fig/triangles.png" style="width:60.0%" alt="triangulated model" class="figure mx-auto d-block"><div class="figcaption">Zooming into the triangles of the 3D model</div>
+</figure><p>The texture is then mapped to this surface.</p>
+<div class="float">
+<video src="fig/rotatedmodel.mp4" controls=""><a href="../fig/rotatedmodel.mp4">3D model with texture</a></video><div class="figcaption">3D model with texture</div>
+</div>
+<div id="challenge-what-does-this-all-mean-for-me" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="challenge-what-does-this-all-mean-for-me" class="callout-inner">
+<h3 class="callout-title">Challenge: What does this all mean for
+me?</h3>
+<div class="callout-content">
+<p>Based on what you have seen, reflect on what are the key things to
+consider when selecting objects for photogrammetry.</p>
+<p>Which of the objects you work with would be the best candidates for
+photogrammetry and which would not be ideal?</p>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="acquisition-tips">Acquisition tips<a class="anchor" aria-label="anchor" href="#acquisition-tips"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Capture images with good texture.</li>
+<li>Avoid completely texture-less, transparent and reflective images.
+The computer will have difficulty finding and matching features.</li>
+<li>If the scene does not contain enough texture itself, you could place
+additional background objects, such as posters, newspapers, small
+objects etc.</li>
+</ul>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ --></section></section><section id="aio-creating-3d-models-via-sfm"><p>Content from <a href="creating-3d-models-via-sfm.html">Creating 3D models via SfM</a></p>
 <hr>
 <p>Last updated on 2024-12-03 |
 
@@ -635,8 +815,7 @@ walking) are not good candidates either.</p>
 <p>Some objects are <strong>shinny</strong> and the
 <strong>reflections</strong> will result in having lots of noise, hence
 a ‘bad’ model. Adding talc or corn-starch on the surface of the object
-could be a solution but this cannot be applied on most cultural heritage
-artefacts.</p>
+could be a solution.</p>
 <p>Significant colour changes or colour designs on a relatively plain
 surface could provide good reference points and help us to produce a
 model.</p>
@@ -1126,7 +1305,7 @@ Reality and Mixed Reality to be more affordable.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>VR headset can include a variety of sensors, including:</p>
 <ul>

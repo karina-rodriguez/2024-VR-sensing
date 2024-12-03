@@ -218,7 +218,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="creating-3d-models-via-sfm.html">3. Creating 3D models via SfM</a>
+        <a href="process-overview.html">3. Process Overview</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -227,7 +227,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="software-workflow.html">4. Software Workflow</a>
+        <a href="creating-3d-models-via-sfm.html">4. Creating 3D models via SfM</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -236,7 +236,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="technologies-for-sensing.html">5. Technologies for sensing</a>
+        <a href="software-workflow.html">5. Software Workflow</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -245,7 +245,16 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="tracking-in-vr.html">6. Tracking in VR</a>
+        <a href="technologies-for-sensing.html">6. Technologies for sensing</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush8">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading8">
+        <a href="tracking-in-vr.html">7. Tracking in VR</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -369,8 +378,8 @@ Mixed Reality applications.</p>
 <h3 class="callout-title">Challenge: Why tracking a physical
 environment?</h3>
 <div class="callout-content">
-<p>Why tracking a physical environment is relevant to the development of
-VR/MR applications</p>
+<p>Why tracking a physical object (or rigid body) is relevant to the
+development of VR/MR applications</p>
 </div>
 </div>
 </div>
@@ -383,17 +392,21 @@ VR/MR applications</p>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<p>Tracking allows the system to understand how a user is moving with
-respect to their physical environment, as well as allowing the user to
-seamlessly interact with digital content within the same space.</p>
+<p>Tracking objects/people allows a system to draw frames with digital
+content which interacts with the physical environment, including
+movements from the user or objects within the phyiscal environment
+(e.g. sofas, tables, trees, buildings).</p>
+<p>These technologies allow users to seamlessly interact with digital
+content within the same space.</p>
 </div>
 </div>
 </div>
 </div>
-<p>Tracking users is particularly relevant for VR/MR applications. It
-allows to determine the position and orientation of the users; as well
-as sensing and providing information regarding the physical space
-surrounding the user.</p>
+<p>Tracking objects/people is particularly relevant for Virtual
+Reality/Mixed Reality applications. It allows sensing and providing
+information regarding the physical space surrounding the user. This
+might be useful to determine the position and orientation of the
+objects/people.</p>
 <iframe title="Charité University Hospital - Operating Room" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay;
 fullscreen; xr-spatial-tracking" xr-spatial-tracking width="100%;" height="400px;" execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9ec46c4d615a4581a235eebfb162f574/embed">
 </iframe>
@@ -406,12 +419,13 @@ PMC9438748.</a></p>
 <p>For instance, to understand how the user moves in space or seamlessly
 augment content in our physical space, we need spatial information about
 it.</p>
-<p><img src="../fig/AdobeStock_250036555.jpeg" alt="© REDPIXEL from AdobeStock" class="figure"> An additional challenge is that
-things in our space are constantly moving, and being subject to the laws
-of physics.</p>
-<p>Not only a localization problem, but also a measuring problem. It
-requires the computer to determine the exact position of the user and of
-obstacles in the surrounding environment in real time.</p>
+<figure><img src="../fig/AdobeStock_250036555.jpeg" alt="image office" class="figure mx-auto d-block"><div class="figcaption">© REDPIXEL from AdobeStock</div>
+</figure><p>This is not only a localization problem, but also a measuring
+problem. It requires the computer to determine the exact position of the
+user and of obstacles in the surrounding environment in real time.</p>
+<p>An additional challenge is that things in our environment are
+constantly moving, and being subject to the laws of physics
+(e.g. lighting, wind, temperature).</p>
 <p>All of this needs to be computed at interactive rates or fast enough
 for the system to operate.</p>
 <!--
