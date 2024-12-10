@@ -83,3 +83,9 @@ A 3D map of the environment is generated in real time.
  "tracking")
 
 Further information: https://xinreality.com/wiki/Main_Page
+
+## Further links
+
+- [XinReality: Virtual Reality and Augmented Reality Wiki](https://xinreality.com/wiki/Main_Page)
+- [Oculus Controller Input and Tracking Overview](https://developers.meta.com/horizon/documentation/unity/unity-ovrinput/)
+- [Hand Tracking Input](https://developers.meta.com/horizon/documentation/unity/unity-tutorial-basic-hand-tracking/?locale=fi_FI)
